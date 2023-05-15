@@ -2,13 +2,11 @@
 
 
 
-# Ansible version:
-ansible --version
-
-ansible [core 2.14.0]
-  python version = 3.11.0 (main, Nov 21 2022, 19:57:48) [Clang 14.0.0 (clang-1400.0.29.202)]
-  jinja version = 3.1.2
-  libyaml = True
+> Ansible version:
+-  ansible [core 2.14.0]
+-  python version = 3.11.0 (main, Nov 21 2022, 19:57:48) [Clang 14.0.0 (clang-1400.0.29.202)]
+-  jinja version = 3.1.2
+-  libyaml = True
 
 
 # Accessing a list of dictionaries in Ansible 
