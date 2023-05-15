@@ -6,12 +6,7 @@
 ansible --version
 
 ansible [core 2.14.0]
-  config file = None
-  configured module search path = ['/Users/klarsen/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules']
-  ansible python module location = /Users/klarsen/.pyenv/versions/3.11.0/lib/python3.11/site-packages/ansible
-  ansible collection location = /Users/klarsen/.ansible/collections:/usr/share/ansible/collections
-  executable location = /Users/klarsen/.pyenv/versions/3.11.0/bin/ansible
-  python version = 3.11.0 (main, Nov 21 2022, 19:57:48) [Clang 14.0.0 (clang-1400.0.29.202)] (/Users/klarsen/.pyenv/versions/3.11.0/bin/python3.11)
+  python version = 3.11.0 (main, Nov 21 2022, 19:57:48) [Clang 14.0.0 (clang-1400.0.29.202)]
   jinja version = 3.1.2
   libyaml = True
 
