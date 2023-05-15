@@ -18,23 +18,23 @@ ansible [core 2.14.0]
 
 # Accessing a list of dictionaries in Ansible 
 
-```bash
+```python
 (ansible-plays) ansible-playbook -c local -i 'localhost,' -e "v2=4.3.0" test.yml
 
-PLAY [Test] ***************************************************************************************************************
+PLAY [Test] *************************************************************************************
 
-TASK [Accessing list of dictionary] ***************************************************************************************
+TASK [Accessing list of dictionary] *************************************************************
 ok: [localhost] => (item={'version': '4.3.0', 'bundle': 'bundle-4.3.0.30967.tar.gz'}) => {
     "msg": " bundles version is 4.3.0 and bundle is bundle-4.3.0.30967.tar.gz"
 }
 skipping: [localhost] => (item={'version': '4.3.1', 'bundle': 'bundle-4.3.1.69410.tar.gz'})
 skipping: [localhost] => (item={'version': '4.3.2', 'bundle': 'bundle-4.3.2.56823.tar.gz'})
 
-TASK [Get extra vars from cmd-line] ****************************************************************************************
+TASK [Get extra vars from cmd-line] **************************************************************
 ok: [localhost] => {
     "msg": "4.3.0"
 }
 
-PLAY RECAP ******************************************************************************************************************
-localhost                  : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0
+PLAY RECAP ***************************************************************************************
+localhost  : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0
 ```
