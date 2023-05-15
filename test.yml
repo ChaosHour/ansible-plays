@@ -1,0 +1,22 @@
+---
+- name: Test
+  hosts: localhost
+  gather_facts: false
+  vars:
+    bundles:
+      - { version: "4.3.0", bundle: "bundle-4.3.0.30967.tar.gz" }
+      - { version: "4.3.1", bundle: "bundle-4.3.1.69410.tar.gz" }
+      - { version: "4.3.2", bundle: "bundle-4.3.2.56823.tar.gz" }
+    v2:
+      - { version: " " }
+  tasks:
+
+    - name: Accessing list of dictionary
+      ansible.builtin.debug:
+        msg=" bundles version is {{ item.version }} and bundle is {{ item.bundle }}"
+      with_items: "{{ bundles }}"
+      when: "v2 == item.version"
+
+    - name: Get extra vars from cmd-line
+      ansible.builtin.debug:
+        msg="{{ v2 }}"
